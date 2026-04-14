@@ -2,9 +2,7 @@
 const products = ["Laptop", "Phone", "Headphones", "Monitor"];
 
 function logFirstProduct() {
-  function logFirstProduct() {
-    console.log(products[0]);
-  }
+  console.log(products[0]);
 }
 
 function updateProductName(index, newName) {
@@ -16,6 +14,10 @@ console.log(`Updated product at index ${index} from "${oldName}" to "${newName}"
 function removeLastProduct() {
   products.pop();
   console.log("products");
+}
+
+function addProduct(product) {
+  products.push(product);
 }
 
 // Export the necessary parts for testing
